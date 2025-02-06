@@ -1,8 +1,9 @@
 import audio from "../audio/VoiceOver_.wav";
-import example from "./scenes/example?scene";
+import gameImages from "./scenes/game-images?scene";
 import { makeProject } from "@motion-canvas/core";
 
 export default makeProject({
-  scenes: [example],
+  scenes: [gameImages],
   audio,
+  experimentalFeatures: true,
 });
