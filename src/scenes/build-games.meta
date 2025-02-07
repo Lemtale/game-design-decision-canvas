@@ -1,0 +1,18 @@
+{
+  "version": 0,
+  "timeEvents": [
+    {
+      "name": "hammer",
+      "targetTime": 1.0632092198581558
+    },
+    {
+      "name": "day 0",
+      "targetTime": 2.259842614482094
+    },
+    {
+      "name": "buildgames_end",
+      "targetTime": 3.2808323804869652
+    }
+  ],
+  "seed": 3783920524
+}

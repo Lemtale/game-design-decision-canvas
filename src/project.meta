@@ -13,11 +13,11 @@
     "audioOffset": 0
   },
   "preview": {
-    "fps": 60,
+    "fps": 30,
     "resolutionScale": 1
   },
   "rendering": {
-    "fps": 60,
+    "fps": 240,
     "resolutionScale": 1,
     "colorSpace": "srgb",
     "exporter": {

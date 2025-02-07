@@ -1,0 +1,50 @@
+{
+  "version": 0,
+  "timeEvents": [
+    {
+      "name": "game_engine_selection",
+      "targetTime": 1.4707553549402483
+    },
+    {
+      "name": "unreal_engine",
+      "targetTime": 5.188652056816518
+    },
+    {
+      "name": "unity",
+      "targetTime": 6.373420993673345
+    },
+    {
+      "name": "godot",
+      "targetTime": 7.056403915273885
+    },
+    {
+      "name": "unreal_engine_out",
+      "targetTime": 11.303391296820323
+    },
+    {
+      "name": "open_source",
+      "targetTime": 17.30407468582424
+    },
+    {
+      "name": "private_company",
+      "targetTime": 18.647889258516887
+    },
+    {
+      "name": "license_could_change",
+      "targetTime": 21.67526496087751
+    },
+    {
+      "name": "throat_clear",
+      "targetTime": 23.67526496087751
+    },
+    {
+      "name": "final_choice",
+      "targetTime": 26.5985726475208
+    },
+    {
+      "name": "engine_end",
+      "targetTime": 28.5985726475208
+    }
+  ],
+  "seed": 3757925602
+}
