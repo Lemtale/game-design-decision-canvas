@@ -6,7 +6,6 @@ import {
   easeOutBack,
   easeOutCubic,
   slideTransition,
-  waitFor,
   waitUntil,
 } from "@motion-canvas/core";
 import { Img, Txt, makeScene2D } from "@motion-canvas/2d";
@@ -17,7 +16,6 @@ import hammer from "../../images/hammer.png";
 export default makeScene2D(function* (view) {
   const hammerRef = createRef<Img>();
   const controllerRef = createRef<Img>();
-  const dayZero = createRef<Txt>();
 
   view.add(
     <>
@@ -30,20 +28,10 @@ export default makeScene2D(function* (view) {
       <Img
         ref={hammerRef}
         src={hammer}
-        width={1000}
-        position={[800, -200]}
+        width={1200}
+        position={[1000, -200]}
         rotation={40}
       />
-      <Txt
-        ref={dayZero}
-        fill="white"
-        fontSize={300}
-        fontWeight={600}
-        position={[0, 1200]}
-        opacity={0}
-      >
-        Day 0
-      </Txt>
     </>
   );
 
@@ -52,7 +40,7 @@ export default makeScene2D(function* (view) {
   yield* waitUntil("hammer");
 
   yield* all(
-    hammerRef().position([550, -200], 0.2),
+    hammerRef().position([650, -200], 0.2),
     hammerRef().rotation(-40, 0.5, easeOutBack),
     delay(
       0.2,
@@ -67,9 +55,7 @@ export default makeScene2D(function* (view) {
 
   yield* all(
     hammerRef().rotation(40, 0.2),
-    hammerRef().position([800, -200], 0.2),
-    dayZero().position([0, 0], 0.2, easeOutBack),
-    dayZero().opacity(100, 0.2)
+    hammerRef().position([1000, -200], 0.2)
   );
 
   yield* waitUntil("buildgames_end");

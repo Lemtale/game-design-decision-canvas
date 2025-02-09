@@ -12,7 +12,7 @@ export default makeScene2D(function* (view) {
   const luigisRef = createRef<Img>();
 
   view.add(
-    <Layout layout direction="column" alignItems="center" width={1000} gap={40}>
+    <Layout layout direction="row" alignItems="center" width="95%" gap={40}>
       <Img
         ref={blackOpsRef}
         src={blackOpsSix}
